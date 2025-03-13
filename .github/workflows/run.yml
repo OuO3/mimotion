@@ -1,18 +1,18 @@
 name: 刷步数
 
-on:  
-  schedule:    
-      - cron: '38 8 * * *' 
-  workflow_dispatch:      
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  
-    timeout-minutes: 60  
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - name: Checkout codes
         uses: actions/checkout@v3
-      - name: Update system and install zsh  
+      - name: Update system and install zsh
         run: |
           sudo -E apt-get -qq update
           sudo -E apt-get install zsh -y
@@ -20,7 +20,7 @@ jobs:
       - name: 初始化Python
         uses: actions/setup-python@v3
         with:
-          python-version: 3.8  
+          python-version: 3.8
           
       - name: 开始
         env:
