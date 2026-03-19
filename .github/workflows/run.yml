@@ -1,9 +1,9 @@
 name: 刷步数
 
 on:
-  schedule:    定时任务：
-    - cron: '52 8 * * *'                                  
-  workflow_dispatch:        
+  schedule:
+    - cron: '52 8 * * *' 
+  workflow_dispatch:       
 
 jobs:
   build:
