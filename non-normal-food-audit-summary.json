@@ -1,0 +1,10 @@
+{
+  "title": "非正常美食文",
+  "source_collection": "202609/5823_e783b73a3da8f712d5d4576de6fd23b6.json",
+  "raw_count": 45,
+  "retained_count": 0,
+  "removed_adult_or_unsafe": 45,
+  "dedup_key": "normalized hostname (www. stripped)",
+  "structural_issues": 0,
+  "note": "这是目前已取得的这一份源合集的去重整理版；已剔除明显成人/色情来源，并做了JSON/字段结构检查。未把网页搜索命中当作100%规则可用性证明。"
+}
